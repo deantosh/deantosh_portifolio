@@ -205,8 +205,12 @@
                 <div class="w-8 h-1 bg-[#6E07F3] mt-4 mb-8"></div>
                 <p class="w-1/2 mb-[40px] text-center text-[25px]">Got a question, proposal or you just want to say hello? Send me a message , I will get back at you as soon as possible.</p>
                 <div class="w-4/5 p-20">
-                    <form class=" flex flex-col p-8" name="contact" method="POST" data-netlify=true action="./thank-you.html">
+                    <form class=" flex flex-col p-8" name="contact" method="POST" netlify>
                         <input type="hidden" name="form-name" value="contact">
+                        <div id="form-messages" class="mb-4 hidden">
+                            <p id="success-message" class="text-green-600 text-center hidden">Thank you! Your message has been sent.</p>
+                            <p id="error-message" class="text-red-600 text-center hidden">There was a problem submitting your form. Please try again.</p>
+                        </div>
                         <div class="flex flex-col md:flex-row space-x-4">
                             <div class="w-1/2 flex-1 flex-col p-4">
                                 <label for="name" class="text-[20px] text-black">Name</label>
@@ -245,5 +249,6 @@
 
         <!--Chat Widget - TIDIO-->
         <script src="//code.tidio.co/iotolkjfy9kayge8d6znvpctrdamt6ws.js" async></script>
+        <script src="./static/js/form.js"></script>
     </body>
 </html>
