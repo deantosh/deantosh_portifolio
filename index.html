@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>deantosh daiddoh</title>
+        <link href="./dist/output.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="font-[Outfit] text-[#666666]">
+        <!--HEADER SECTION-->
+        <header class="bg-white sticky top-0 z-50 border-b border-[#E3EAF2]">
+            <nav class="flex justify-between items-center px-4">
+                <img src="static/images/logo.png" alt="Personal brand logo" class="w-12 h-12">
+                <div>
+                    <ul class="flex space-x-4">
+                        <li><a class="hover:text-[#6E07F3]" href="#home"><span class="text-[#6E07F3]">1.</span> HOME</a></li>
+                        <li><a class="hover:text-[#6E07F3]" href="#about"><span class="text-[#6E07F3]">2.</span> ABOUT</a></li>
+                        <li><a class="hover:text-[#6E07F3]" href="#projects"><span class="text-[#6E07F3]">3.</span> PROJECTS</a></li>
+                        <li><a class="hover:text-[#6E07F3]" href="#contact"><span class="text-[#6E07F3]">4.</span> CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--MAIN CONTENT-->
+        <main>
+            <!--Social Icons-->
+            <aside class="hidden md:block z-50 absolute sticky top-1/2 left-0 transform -translate-y-1/2 w-16 h-auto bg-white p-4">
+                <div class="flex flex-col space-u-4">
+                    <a href="https://github.com/deantosh" target="_blank" class="text-3xl hover:text-[#6E07F3]">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/deantosh-daiddoh" target="_blank" class="text-3xl hover:text-[#6E07F3] pt-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </aside>
+            <!--HERO SECTION-->
+            <section id="home" class="bg-white text-center h-[calc(100vh-13rem)] relative scroll-mt-40">
+                <h1 class="font-bold text-[40px] mt-8">Hi I'm <span class="text-[#6E07F3]">Deantosh Daiddoh</span> - Software Engineer</h1>
+                <div class="w-full md:max-w-[1000px] mx-auto flex flex-col md:flex-row justify-center items-start space-y-8 md:space-y-0 md:space-x-8 mt-16">
+                    <div class="flex-1 p-8 flex flex-col justify-between h-[480px]">
+                        <h2 class="font-bold text-[42px] text-[#6E07F3] text-left mr-40">I build & design stuff</h2>
+                        <p class="text-[25px] text-left">Softwares, APIs, Databases, Web Apps, Open source projects and experimentals.</p>
+                        <a href="https://github.com/deantosh?tab=repositories" target="_blank">
+                            <button class="bg-transparent w-3/4 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-4 py-6 hover:bg-[#6E07F3] hover:text-white transition group">
+                                <span class="text-[20px]">SEE MY WORK</span>
+                                <!-- Custom Tail -->
+                                <span class="right-4 top-1/2 h-[2px] w-12 bg-[#6E07F3] group-hover:bg-white"></span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-8 pl-20 flex flex-col justify-between h-[480px] border-l border-[#6E07F3] border-l-[1px]">
+                        <h2 class="font-bold text-[42px] text-[#6E07F3] text-left mr-40">I write sometimes</h2>
+                        <P class="text-[25px] text-left">A code postmortem of each project that I do. I also enjoy writing about exciting code topics that I am currently reading about.</P>
+                        <a href="https://medium.com/@daiddoh" target="_blank">
+                            <button class="bg-transparent w-3/4 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-4 py-6 hover:bg-[#6E07F3] hover:text-white transition group">
+                                <span class="text-[20px]">READ MY ARTICLES</span>
+                                <!-- Custom Tail -->
+                                <span class="right-4 top-1/2 h-[2px] w-12 bg-[#6E07F3] group-hover:bg-white"></span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!--DIAMOND SECTION DIVIDER-->
+                <div class="flex justify-center z-50 items-center absolute -bottom-2.5 left-0 w-full">
+                    <div class="bg-[#A561FD] w-5 h-5 transform rotate-45 animate-blinkRotate"></div>
+                </div>
+            </section>
+            
+            <!-- ABOUT SECTION -->
+            <section id="about" class="bg-[#F5F6FE] flex flex-col items-center pt-20 pb-20 relative">
+                <h2 class="text-[30px] font-bold text-black">ABOUT ME</h2>
+                <div class="w-8 h-1 bg-[#6E07F3] mt-4 mb-8"></div>
+                <p class="w-1/2 text-center text-[25px]">Here you will find more information about me, my career  path to software engineering and my current skills in Tech</p>
+                <div class="w-3/4 pl-20 pt-20 pr-20">
+                    <h3 class="text-black font-semibold text-[25px]">Get to know me!</h3>
+                    <div class="flex flex-col md:flex-row pt-8">
+                        <div class="p-8 w-[500px] h-auto">
+                            <img src="static/images/deantosh.png" alt="Deantosh profile Image" class="rounded-full">
+                        </div>
+                        <div class="pl-10 pr-30 font-mixed text-[20px]">
+                            <p >Hi, I’m Deantosh Daiddoh — a curious mind with a unique blend of experiences in petroleum engineering, finance, and software development. </p>
+                            <p>I began my career in the oil and gas sector, working with Tullow Oil, and later transitioned into the banking and finance industry at Equity Bank. Along the way, I earned my Financial Modeling & Valuation Analyst (FMVA) certification from the Corporate Finance Institute, sharpening my analytical and problem-solving skills.</p>
+                            <p>My passion for technology led me down a new path — one I had already been exploring through self-study for years. I later formalized this journey by completing a rigorous one-year Software Engineering program with ALX. Today, I’m actively building private tech projects, drawing from my diverse professional background to create solutions that address real-world challenges.</p>
+                            <p>When I’m not coding or analyzing data, you’ll probably find me enjoying a strong cup of coffee and thinking about the next problem to solve.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row w-3/4 pl-20 pt-10 pr-20">
+                    <div class="p-8 w-2/5">
+                        <h3 class="font-semibold text-[20px] text-[#6E07F3]"><i class="fas fa-paint-brush mr-4"></i>DESIGNER</h3>
+                        <p class="text-[20px] mt-4">Although I try not to design, I find myself doing it.  Especially on solo projects where I have to work on everythiing.</p>
+                        <table class="w-full mt-8">
+                            <thead class="text-left">
+                                <th>Tools</th>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-black">
+                                    <td class="p-4 text-center">Figma</td>
+                                <tr>
+                                <tr class="border-b border-black">
+                                    <td class="p-4 text-center">Pen & Paper</td>
+                                </tr>
+                            
+                        </table>
+                    </div>
+                    <div class="p-8 w-3/5">
+                        <h3 class="font-semibold text-[20px] text-[#6E07F3]"><i class="fas fa-code mr-4"></i>SOFTWARE DEVELOPER</h3>
+                        <P class="text-[20px] mt-4">I love  conding from scratch and  I enjoy bringing Ideas to life.</P>
+                        <table class="w-full mt-8">
+                            <thead class="text-left">
+                                <tr class="border-b border-black">
+                                    <th class="p-4 text-center">Languages</th>
+                                    <th class="p-4 text-center">Frameworks</th>
+                                    <th class="p-4 text-center">Tools</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-black">
+                                    <td class="p-4 text-center">Python</td>
+                                    <td class="p-4 text-center">Django</td>
+                                    <td class="p-4 text-center">Git</td>
+                                </tr>
+                                <tr class="border-b border-black">
+                                    <td class="p-4 text-center">JavaScript</td>
+                                    <td class="p-4 text-center">React</td>
+                                    <td class="p-4 text-center">Postman</td>
+                                </tr>
+                                <tr class="border-b border-black">
+                                    <td class="p-4 text-center">C</td>
+                                    <td class="p-4 text-center">Flask</td>
+                                    <td class="p-4 text-center">Docker</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--DIAMOND SECTION DIVIDER-->
+                <div class="flex z-50 justify-center items-center absolute -bottom-2.5 left-0 w-full">
+                    <div class="bg-[#A561FD] w-5 h-5 transform rotate-45 animate-blinkRotate"></div>
+                </div>
+            </section>
+
+            <!--PROJECTS SECTION-->
+            <section id="projects" class="bg-white flex flex-col items-center pt-20 pb-20 relative">
+                <h2 class="text-[30px] font-bold text-black">PROJECTS</h2>
+                <div class="w-8 h-1 bg-[#6E07F3] mt-4 mb-8"></div>
+                <p class="w-3/5 text-center text-[25px] text-[#666666] mx-auto mb-8">Here are some of the projects I’ve worked on, showcasing my skills in software development, design, and problem-solving. Each project represents a unique challenge and an opportunity to create impactful solutions.</p>
+                <div class="flex flex-col md:flex-row w-3/4 p-20">
+                    <img src="static/images/LuDaChat_mockup.png" alt="LuDa chat application" class="w-1/2">
+                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
+                        <h3 class="font-bold text-[30px] text-black">LuDa Chat</h3>
+                        <p class="text-[20px] mt-4">LuDa Chat is a real time chat application designed to allow user to create rooms of specific discussions. It also allows users to join  rooms of interest and share ideas with like minded individuals. It connects users based on the areas of interest be it medicine, engineering, programming e.t.c  </p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row w-3/4 p-20">
+                    <img src="static/images/SavePals.png" alt="SavePals financial application" class="w-1/2">
+                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
+                        <h3 class="font-bold text-[30px] text-black">SavePals</h3>
+                        <p class="text-[20px] mt-4">SavePals is a collaborative savings platform that allows friends to save money together by setting group goals, tracking progress, and managing  contributions.</p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button></p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row w-3/4 p-20">
+                    <img src="static/images/AirBnB_clone_mockup.png" alt="AirBnB clone application" class="w-1/2">
+                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
+                        <h3 class="font-bold text-[30px] text-black">AirBnB Clone</h3>
+                        <p class="text-[20px] mt-4">AirBnB Console is a s a full-stack clone of the core functionality of the Airbnb platform. It also includes a command-line interface (console) for interacting with the system’s data. Users can create, update, retrieve, and delete records such as users, places, amenities, and reviews.</p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row w-3/4 p-20">
+                    <img src="static/images/simple_shell_mockup.png" alt="Simple Shell application" class="w-1/2">
+                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
+                        <h3 class="font-bold text-[30px] text-black">Simple Shell</h3>
+                        <p class="text-[20px] mt-4">Simple Shell is a command-line interpreter that allows users to execute commands and manage processes. It supports built-in commands, environment variables, and input/output redirection.</p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row w-3/4 p-20">
+                    <img src="static/images/fyyur_mockup.png" alt="Fyyur: Artist-Venue Booking Application" class="w-1/2">
+                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
+                        <h3 class="font-bold text-[30px] text-black">Fyyur</h3>
+                        <p class="text-[20px] mt-4">Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of shows between local performing artists and  venues. This site lets you list new artists and venues, discover them,  and list shows with artists as a venue owner.</p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
+                
+                    </div>
+                </div>
+                <!--DIAMOND SECTION DIVIDER-->
+                <div class="flex z-50 justify-center items-center absolute -bottom-2.5 left-0 w-full">
+                    <div class="bg-[#A561FD] w-5 h-5 transform rotate-45 animate-blinkRotate"></div>
+                </div>
+            </section>
+
+            <!--CONTACT SECTION-->
+            <section id="contact" class="bg-[#F5F6FE] flex flex-col items-center relative pt-20 pb-20">
+                <h2 class="text-black font-bold text-[30px]">CONTACT</h2>
+                <div class="w-8 h-1 bg-[#6E07F3] mt-4 mb-8"></div>
+                <p class="w-1/2 mb-[40px] text-center text-[25px]">Got a question, proposal or you just want to say hello? Send me a message , I will get back at you as soon as possible.</p>
+                <div class="w-4/5 p-20">
+                    <form name="contact" method="POST" data-netlify=true class=" flex flex-col p-8">
+                        <input type="hidden" name="form-name" value="contact">
+                        <div class="flex flex-col md:flex-row space-x-4">
+                            <div class="w-1/2 flex-1 flex-col p-4">
+                                <label for="name" class="text-[20px] text-black">Name</label>
+                                <input class="w-full bg-transparent p-4 mt-4 border-b font-semibold text-[20px] border-[#6E07F3]" type="text" name="name" placeholder="Enter your Name" required>
+                            </div>
+                            <div class="w-1/2 flex-1 flex-col p-4">
+                                <label for="email" class="text-[20px] text-black">Email</label>
+                                <input class="w-full bg-transparent p-4 mt-4 border-b font-semibold text-[20px] border-[#6E07F3]" type="email" name="email" placeholder="Enter your Email" required>
+                            </div>
+                        </div>
+                            <div class="flex flex-col p-4">
+                                <label for="message" class="text-[20px] mb-4 text-black">Message</label>
+                                <textarea class="w-full bg-transparent p-4 border-b border-[#6E07F3] font-semibold text-[20px]" name="message" rows="5" placeholder="Enter Message"></textarea>
+                            </div>
+                        <button class="bg-transparent w-1/5 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-6 py-5 mt-8 ml-auto hover:bg-[#6E07F3] hover:text-white transition group" type="submit">
+                            <span class="text-[20px] text-left">SUBMIT</span>
+                            <!-- Custom Tail -->
+                            <span class="right-4 top-1/2 h-[2px] w-12 bg-[#6E07F3] group-hover:bg-white"></span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <footer class="bg-white flex flex-col items-center h-40">
+            <a href="#home">
+                <div class=" flex flex-col text-center justify-center w-20 h-20 rounded-full text-black bg-white border border-[#F6F5FF] absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-[#6E07F3] hover:text-white">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>TOP</span>
+                </div>
+            </a>
+            <p class="mt-auto mb-auto"> ©  2025 deantosh daiddoh . All rights reserved</p>
+        </footer>
+
+        <!--Chat Widget - TIDIO-->
+        <script src="//code.tidio.co/iotolkjfy9kayge8d6znvpctrdamt6ws.js" async></script>
+    </body>
+</html>
