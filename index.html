@@ -12,10 +12,25 @@
     <body class="font-[Outfit] text-[#666666]">
         <!--HEADER SECTION-->
         <header class="bg-white sticky top-0 z-50 border-b border-[#E3EAF2]">
-            <nav class="flex justify-between items-center px-4">
-                <img src="static/images/logo.png" alt="Personal brand logo" class="w-12 h-12">
-                <div>
-                    <ul class="flex space-x-4">
+            <nav>
+                <div class="flex justify-between items-center">
+                    <img src="static/images/logo.png" alt="Personal brand logo" class="w-12 h-12 ml-2">
+                    <div class="hidden md:block mr-2">
+                        <ul class="flex space-x-4">
+                            <li><a class="hover:text-[#6E07F3]" href="#home"><span class="text-[#6E07F3]">1.</span> HOME</a></li>
+                            <li><a class="hover:text-[#6E07F3]" href="#about"><span class="text-[#6E07F3]">2.</span> ABOUT</a></li>
+                            <li><a class="hover:text-[#6E07F3]" href="#projects"><span class="text-[#6E07F3]">3.</span> PROJECTS</a></li>
+                            <li><a class="hover:text-[#6E07F3]" href="#contact"><span class="text-[#6E07F3]">4.</span> CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="focus:outline-none p-4">
+                            <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="dropdown-menu" class="w-screen hidden top-16 l-0 bg-white shadow-lg rounded-lg p-4">
+                    <ul class="flex flex-col space-y-4">
                         <li><a class="hover:text-[#6E07F3]" href="#home"><span class="text-[#6E07F3]">1.</span> HOME</a></li>
                         <li><a class="hover:text-[#6E07F3]" href="#about"><span class="text-[#6E07F3]">2.</span> ABOUT</a></li>
                         <li><a class="hover:text-[#6E07F3]" href="#projects"><span class="text-[#6E07F3]">3.</span> PROJECTS</a></li>
@@ -39,29 +54,29 @@
                 </div>
             </aside>
             <!--HERO SECTION-->
-            <section id="home" class="bg-white text-center h-[calc(100vh-13rem)] relative scroll-mt-40">
-                <h1 class="font-bold text-[40px] mt-8">Hi I'm <span class="text-[#6E07F3]">Deantosh Daiddoh</span> - Software Engineer</h1>
-                <div class="w-full md:max-w-[1000px] mx-auto flex flex-col md:flex-row justify-center items-start space-y-8 md:space-y-0 md:space-x-8 mt-16">
-                    <div class="flex-1 p-8 flex flex-col justify-between h-[480px]">
-                        <h2 class="font-bold text-[42px] text-[#6E07F3] text-left mr-40">I build & design stuff</h2>
-                        <p class="text-[25px] text-left">Softwares, APIs, Databases, Web Apps, Open source projects and experimentals.</p>
+            <section id="home" class="bg-white text-center h-[calc(100vh-9rem)] md:h-[65vh] lg:h-[calc(100vh-13rem)] relative scroll-mt-40">
+                <h1 class="font-bold text-[20px] md:text-[40px] mt-20 md:mt-8">Hi I'm <span class="text-[#6E07F3]">Deantosh Daiddoh</span> - Software Engineer</h1>
+                <div class="w-full md:max-w-[1000px] mx-auto flex flex-col md:flex-row justify-center items-start space-y-4 md:space-y-0 md:space-x-8 mt-16">
+                    <div class="flex-1 p-8 md:p-5 flex flex-col justify-between md:h-[300px] lg:h-[480px]">
+                        <h2 class="font-bold text-[20px] lg:text-[42px] text-[#6E07F3] text-left mr-40">I build & design stuff</h2>
+                        <p class="text-[15px] lg:text-[25px] text-left">Softwares, APIs, Databases, Web Apps, Open source projects and experimentals.</p>
                         <a href="https://github.com/deantosh?tab=repositories" target="_blank">
-                            <button class="bg-transparent w-3/4 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-4 py-6 hover:bg-[#6E07F3] hover:text-white transition group">
-                                <span class="text-[20px]">SEE MY WORK</span>
+                            <button class="bg-transparent w-1/2 md:w-3/4 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-2 py-2 md:px-4 md:py-6 mt-[10px] hover:bg-[#6E07F3] hover:text-white transition group">
+                                <span class="text-[10px] lg:text-[20px]">SEE MY WORK</span>
                                 <!-- Custom Tail -->
-                                <span class="right-4 top-1/2 h-[2px] w-12 bg-[#6E07F3] group-hover:bg-white"></span>
+                                <span class="sm:hidden md:block right-4 top-1/2 h-[2px] w-12 bg-[#6E07F3] group-hover:bg-white"></span>
                                 <i class="fas fa-arrow-right"></i>
                             </button>
                         </a>
-                    </div>
-                    <div class="flex-1 p-8 pl-20 flex flex-col justify-between h-[480px] border-l border-[#6E07F3] border-l-[1px]">
-                        <h2 class="font-bold text-[42px] text-[#6E07F3] text-left mr-40">I write sometimes</h2>
-                        <P class="text-[25px] text-left">A code postmortem of each project that I do. I also enjoy writing about exciting code topics that I am currently reading about.</P>
+                    </div>-
+                    <div class="flex-1 p-8 md:pl-10 lg:pl-20 flex flex-col justify-between md:h-[300px] lg:h-[480px] border-l border-[#6E07F3] border-l-[1px]">
+                        <h2 class="font-bold text-[20px] lg:text-[42px] text-[#6E07F3] text-left mr-40">I write sometimes</h2>
+                        <P class="text-[15px] lg:text-[25px] text-left">A code postmortem of each project that I do. I also enjoy writing about exciting code topics that I am currently reading about.</P>
                         <a href="https://medium.com/@daiddoh" target="_blank">
-                            <button class="bg-transparent w-3/4 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-4 py-6 hover:bg-[#6E07F3] hover:text-white transition group">
-                                <span class="text-[20px]">READ MY ARTICLES</span>
+                            <button class="bg-transparent w-3/4 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-2 py-2 md:px-4 md:py-6 mt-[10px] hover:bg-[#6E07F3] hover:text-white transition group">
+                                <span class="text-[10px] lg:text-[20px]">READ MY ARTICLES</span>
                                 <!-- Custom Tail -->
-                                <span class="right-4 top-1/2 h-[2px] w-12 bg-[#6E07F3] group-hover:bg-white"></span>
+                                <span class="sm:hidden md:block right-4 top-1/2 h-[2px] w-12 bg-[#6E07F3] group-hover:bg-white"></span>
                                 <i class="fas fa-arrow-right"></i>
                             </button>
                         </a>
@@ -74,17 +89,17 @@
             </section>
             
             <!-- ABOUT SECTION -->
-            <section id="about" class="bg-[#F5F6FE] flex flex-col items-center pt-20 pb-20 relative">
-                <h2 class="text-[30px] font-bold text-black">ABOUT ME</h2>
+            <section id="about" class="bg-[#F5F6FE] flex flex-col items-center pt-20 pb-[6rem] relative">
+                <h2 class=" text-[20px] md:text-[30px] font-bold text-black">ABOUT ME</h2>
                 <div class="w-8 h-1 bg-[#6E07F3] mt-4 mb-8"></div>
-                <p class="w-1/2 text-center text-[25px]">Here you will find more information about me, my career  path to software engineering and my current skills in Tech</p>
-                <div class="w-3/4 pl-20 pt-20 pr-20">
-                    <h3 class="text-black font-semibold text-[25px]">Get to know me!</h3>
+                <p class=" w-3/4 lg:w-1/2 text-center md:text-[20px] lg:text-[25px]">Here you will find more information about me, my career  path to software engineering and my current skills in Tech</p>
+                <div class="w-full lg:w-3/4 pl-5 pt-5 pr-5 md:pl-20 md:pt-20 md:pr-20">
+                    <h3 class="text-black font-semibold text-[15px] md:text-[25px] text-center md:text-left">Get to know me!</h3>
                     <div class="flex flex-col md:flex-row pt-8">
-                        <div class="p-8 w-[500px] h-auto">
+                        <div class="p-8 ml-auto mr-auto w-[60%] md:w-[500px] h-auto">
                             <img src="static/images/deantosh.png" alt="Deantosh profile Image" class="rounded-full">
                         </div>
-                        <div class="pl-10 pr-30 font-mixed text-[20px]">
+                        <div class="pl-5 pr-5 md:pl-10 md:pr-30 font-mixed text-[14px] md:text-[20px]">
                             <p >Hi, I’m Deantosh Daiddoh — a curious mind with a unique blend of experiences in petroleum engineering, finance, and software development. </p>
                             <p>I began my career in the oil and gas sector, working with Tullow Oil, and later transitioned into the banking and finance industry at Equity Bank. Along the way, I earned my Financial Modeling & Valuation Analyst (FMVA) certification from the Corporate Finance Institute, sharpening my analytical and problem-solving skills.</p>
                             <p>My passion for technology led me down a new path — one I had already been exploring through self-study for years. I later formalized this journey by completing a rigorous one-year Software Engineering program with ALX. Today, I’m actively building private tech projects, drawing from my diverse professional background to create solutions that address real-world challenges.</p>
@@ -92,11 +107,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row w-3/4 pl-20 pt-10 pr-20">
-                    <div class="p-8 w-2/5">
-                        <h3 class="font-semibold text-[20px] text-[#6E07F3]"><i class="fas fa-paint-brush mr-4"></i>DESIGNER</h3>
-                        <p class="text-[20px] mt-4">Although I try not to design, I find myself doing it.  Especially on solo projects where I have to work on everythiing.</p>
-                        <table class="w-full mt-8">
+                <div class="flex flex-col lg:flex-row lg:w-3/4 pl-5 pr-5 md:pl-20 pt-10 md:pr-20">
+                    <div class="p-2 lg:p-8 lg:w-2/5">
+                        <h3 class="font-semibold text-[15px] md:text-[16px] text-[#6E07F3]"><i class="fas fa-paint-brush mr-4"></i>DESIGNER</h3>
+                        <p class=" text-[14px] md:text-[20px] mt-4">Although I try not to design, I find myself doing it.  Especially on solo projects where I have to work on everythiing.</p>
+                        <table class="w-full mt-8 text-[14px] md:text-[20px]">
                             <thead class="text-left">
                                 <th>Tools</th>
                             </thead>
@@ -110,10 +125,10 @@
                             
                         </table>
                     </div>
-                    <div class="p-8 w-3/5">
-                        <h3 class="font-semibold text-[20px] text-[#6E07F3]"><i class="fas fa-code mr-4"></i>SOFTWARE DEVELOPER</h3>
-                        <P class="text-[20px] mt-4">I love  conding from scratch and  I enjoy bringing Ideas to life.</P>
-                        <table class="w-full mt-8">
+                    <div class="p-2 mt-[20px] lg:mt-[0px] lg:p-8 lg:w-3/5">
+                        <h3 class="font-semibold text-[15px] md:text-[16px] text-[#6E07F3]"><i class="fas fa-code mr-4"></i>SOFTWARE DEVELOPER</h3>
+                        <P class="text-[14px] md:text-[20px] mt-4">I love  conding from scratch and  I enjoy bringing Ideas to life.</P>
+                        <table class="w-full mt-8 text-[14px] md:text-[20px]">
                             <thead class="text-left">
                                 <tr class="border-b border-black">
                                     <th class="p-4 text-center">Languages</th>
@@ -149,47 +164,52 @@
 
             <!--PROJECTS SECTION-->
             <section id="projects" class="bg-white flex flex-col items-center pt-20 pb-20 relative">
-                <h2 class="text-[30px] font-bold text-black">PROJECTS</h2>
+                <h2 class="text-[20px] md:text-[30px] font-bold text-black">PROJECTS</h2>
                 <div class="w-8 h-1 bg-[#6E07F3] mt-4 mb-8"></div>
-                <p class="w-3/5 text-center text-[25px] text-[#666666] mx-auto mb-8">Here are some of the projects I’ve worked on, showcasing my skills in software development, design, and problem-solving. Each project represents a unique challenge and an opportunity to create impactful solutions.</p>
-                <div class="flex flex-col md:flex-row w-3/4 p-20">
-                    <img src="static/images/LuDaChat_mockup.png" alt="LuDa chat application" class="w-1/2">
-                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
-                        <h3 class="font-bold text-[30px] text-black">LuDa Chat</h3>
-                        <p class="text-[20px] mt-4">LuDa Chat is a real time chat application designed to allow user to create rooms of specific discussions. It also allows users to join  rooms of interest and share ideas with like minded individuals. It connects users based on the areas of interest be it medicine, engineering, programming e.t.c  </p>
-                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
+                <p class="lg:w-3/5 p-8 text-center md:text-[20px] lg:text-[25px] text-[#666666] mx-auto mb-8">Here are some of the projects I’ve worked on, showcasing my skills in software development, design, and problem-solving. Each project represents a unique challenge and an opportunity to create impactful solutions.</p>
+                <div class="flex flex-col md:flex-row lg:w-3/4 space-y-8 p-8 lg:p-20">
+                    <h3 class="font-bold text-[20px] text-center text-black md:hidden">LuDa Chat</h3>
+                    <img src="static/images/LuDaChat_mockup.png" alt="LuDa chat application" class="md:w-1/2 object-contain">
+                    <div class="md:w-1/2 md:pt-10 md:pb-10 md:pl-10 md:pr-20">
+                        <h3 class="font-bold text-[30px] text-black hidden md:block">LuDa Chat</h3>
+                        <p class="text-[15px] md:text-[20px] mt-4">LuDa Chat is a real time chat application designed to allow user to create rooms of specific discussions. It also allows users to join  rooms of interest and share ideas with like minded individuals. It connects users based on the areas of interest be it medicine, engineering, programming e.t.c  </p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[12px] md:text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row w-3/4 p-20">
-                    <img src="static/images/SavePals.png" alt="SavePals financial application" class="w-1/2">
-                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
-                        <h3 class="font-bold text-[30px] text-black">SavePals</h3>
-                        <p class="text-[20px] mt-4">SavePals is a collaborative savings platform that allows friends to save money together by setting group goals, tracking progress, and managing  contributions.</p>
-                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button></p>
+                <div class="flex flex-col md:flex-row lg:w-3/4 space-y-8 p-8 lg:p-20">
+                    <h3 class="font-bold text-[20px] text-center text-black md:hidden">SavePals</h3>
+                    <img src="static/images/SavePals.png" alt="SavePals financial application" class="md:w-1/2 object-contain">
+                    <div class="md:w-1/2 md:pt-10 md:pb-10 md:pl-10 md:pr-20">
+                        <h3 class="font-bold text-[30px] text-black hidden md:block">SavePals</h3>
+                        <p class="text-[15px] md:text-[20px] mt-4">SavePals is a collaborative savings platform that allows friends to save money together by setting group goals, tracking progress, and managing  contributions.</p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[12px] ml-auto mr-auto md:text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button></p>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row w-3/4 p-20">
-                    <img src="static/images/AirBnB_clone_mockup.png" alt="AirBnB clone application" class="w-1/2">
-                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
-                        <h3 class="font-bold text-[30px] text-black">AirBnB Clone</h3>
-                        <p class="text-[20px] mt-4">AirBnB Console is a s a full-stack clone of the core functionality of the Airbnb platform. It also includes a command-line interface (console) for interacting with the system’s data. Users can create, update, retrieve, and delete records such as users, places, amenities, and reviews.</p>
-                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
+                <div class="flex flex-col md:flex-row lg:w-3/4 space-y-8 p-8 lg:p-20">
+                    <h3 class="font-bold text-[20px] text-center text-black md:hidden">AirBnB Clone</h3>
+                    <img src="static/images/AirBnB_clone_mockup.png" alt="AirBnB clone application" class="md:w-1/2 object-contain">
+                    <div class="md:w-1/2 md:pt-10 md:pb-10 md:pl-10 md:pr-20">
+                        <h3 class="font-bold text-[30px] text-black hidden md:block">AirBnB Clone</h3>
+                        <p class="text-[15px] md:text-[20px] mt-4">AirBnB Console is a s a full-stack clone of the core functionality of the Airbnb platform. It also includes a command-line interface (console) for interacting with the system’s data. Users can create, update, retrieve, and delete records such as users, places, amenities, and reviews.</p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[12px] ml-auto mr-auto md:text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row w-3/4 p-20">
-                    <img src="static/images/simple_shell_mockup.png" alt="Simple Shell application" class="w-1/2">
-                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
-                        <h3 class="font-bold text-[30px] text-black">Simple Shell</h3>
-                        <p class="text-[20px] mt-4">Simple Shell is a command-line interpreter that allows users to execute commands and manage processes. It supports built-in commands, environment variables, and input/output redirection.</p>
-                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
+                <div class="flex flex-col md:flex-row lg:w-3/4 space-y-8 p-8 lg:p-20">
+                    <h3 class="font-bold text-[20px] text-center text-black md:hidden">Simple Shell</h3>
+                    <img src="static/images/simple_shell_mockup.png" alt="Simple Shell application" class="md:w-1/2 object-contain">
+                    <div class="md:w-1/2 md:pt-10 md:pb-10 md:pl-10 md:pr-20">
+                        <h3 class="font-bold text-[30px] text-black hidden md:block">Simple Shell</h3>
+                        <p class="text-[15px] md:text-[20px] mt-4">Simple Shell is a command-line interpreter that allows users to execute commands and manage processes. It supports built-in commands, environment variables, and input/output redirection.</p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[12px] ml-auto mr-auto md:text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row w-3/4 p-20">
-                    <img src="static/images/fyyur_mockup.png" alt="Fyyur: Artist-Venue Booking Application" class="w-1/2">
-                    <div class="w-1/2 pt-10 pb-10 pl-10 pr-20">
-                        <h3 class="font-bold text-[30px] text-black">Fyyur</h3>
-                        <p class="text-[20px] mt-4">Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of shows between local performing artists and  venues. This site lets you list new artists and venues, discover them,  and list shows with artists as a venue owner.</p>
-                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
+                <div class="flex flex-col md:flex-row lg:w-3/4 space-y-8 p-8 lg:p-20">
+                    <h3 class="font-bold text-[20px] text-center text-black md:hidden">Fyyur</h3>
+                    <img src="static/images/fyyur_mockup.png" alt="Fyyur: Artist-Venue Booking Application" class="md:w-1/2 object-contain">
+                    <div class="md:w-1/2 md:pt-10 md:pb-10 md:pl-10 md:pr-20">
+                        <h3 class="font-bold text-[30px] text-black hidden md:block">Fyyur</h3>
+                        <p class="text-[15px] md:text-[20px] mt-4">Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of shows between local performing artists and  venues. This site lets you list new artists and venues, discover them,  and list shows with artists as a venue owner.</p>
+                        <button class="bg-transparent mt-4 border border-[#6E07F3] font-semibold text-[12px] ml-auto mr-auto md:text-[16px] pl-10 pr-10 pt-4 pb-4 rounded-[10px]">VIEW MORE</button>
                 
                     </div>
                 </div>
@@ -201,32 +221,32 @@
 
             <!--CONTACT SECTION-->
             <section id="contact" class="bg-[#F5F6FE] flex flex-col items-center relative pt-20 pb-20">
-                <h2 class="text-black font-bold text-[30px]">CONTACT</h2>
+                <h2 class="text-black font-bold text-[20px] md:text-[30px]">CONTACT</h2>
                 <div class="w-8 h-1 bg-[#6E07F3] mt-4 mb-8"></div>
-                <p class="w-1/2 mb-[40px] text-center text-[25px]">Got a question, proposal or you just want to say hello? Send me a message , I will get back at you as soon as possible.</p>
-                <div class="w-4/5 p-20">
+                <p class="lg:w-1/2 p-8 mb-[40px] text-center md:text-[20px] lg:text-[25px]">Got a question, proposal or you just want to say hello? Send me a message , I will get back at you as soon as possible.</p>
+                <div class="lg:w-4/5 md:p-8 lg:p-20">
                     <!--Success and Error message-->
                     <div id="form-messages" class="mb-4 hidden">
                         <p id="success-message" class="text-green-600 text-center hidden">Thank you! Your message has been sent.</p>
                         <p id="error-message" class="text-red-600 text-center hidden">There was a problem submitting your form. Please try again.</p>
                     </div>
-                    <form class=" flex flex-col p-8" name="contact" method="POST" netlify>
+                    <form class="flex flex-col md:p-8" name="contact" method="POST" netlify>
                         <input type="hidden" name="form-name" value="contact">
-                        <div class="flex flex-col md:flex-row space-x-4">
-                            <div class="w-1/2 flex-1 flex-col p-4">
+                        <div class="flex flex-col md:flex-row md:space-x-4">
+                            <div class="md:w-1/2 flex-1 flex-col p-4">
                                 <label for="name" class="text-[20px] text-black">Name</label>
                                 <input class="w-full bg-transparent p-4 mt-4 border-b font-semibold text-[20px] border-[#6E07F3]" type="text" name="name" placeholder="Enter your Name" required>
                             </div>
-                            <div class="w-1/2 flex-1 flex-col p-4">
+                            <div class="md:w-1/2 flex-1 flex-col p-4">
                                 <label for="email" class="text-[20px] text-black">Email</label>
                                 <input class="w-full bg-transparent p-4 mt-4 border-b font-semibold text-[20px] border-[#6E07F3]" type="email" name="email" placeholder="Enter your Email" required>
                             </div>
                         </div>
-                            <div class="flex flex-col p-4">
-                                <label for="message" class="text-[20px] mb-4 text-black">Message</label>
-                                <textarea class="w-full bg-transparent p-4 border-b border-[#6E07F3] font-semibold text-[20px]" name="message" rows="5" placeholder="Enter Message"></textarea>
-                            </div>
-                        <button class="bg-transparent w-1/5 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-6 py-5 mt-8 ml-auto hover:bg-[#6E07F3] hover:text-white transition group" type="submit">
+                        <div class="flex flex-col p-4">
+                            <label for="message" class="text-[20px] mb-4 text-black">Message</label>
+                            <textarea class="w-full bg-transparent p-4 border-b border-[#6E07F3] font-semibold text-[20px]" name="message" rows="5" placeholder="Enter Message"></textarea>
+                        </div>
+                        <button class="bg-transparent md:w-1/5 border border-[#6E07F3] text-[#6E07F3] flex items-center justify-start space-x-2 px-6 py-5 mt-8 ml-auto hover:bg-[#6E07F3] hover:text-white transition group" type="submit">
                             <span class="text-[20px] text-left">SUBMIT</span>
                             <!-- Custom Tail -->
                             <span class="right-4 top-1/2 h-[2px] w-12 bg-[#6E07F3] group-hover:bg-white"></span>
@@ -245,11 +265,20 @@
                     <span>TOP</span>
                 </div>
             </a>
-            <p class="mt-auto mb-auto"> ©  2025 deantosh daiddoh . All rights reserved</p>
+            <div class="md:hidden flex flex-row space-x-4 mt-16">
+                <a href="https://github.com/deantosh" target="_blank" class="text-3xl hover:text-[#6E07F3]">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/deantosh-daiddoh" target="_blank" class="text-3xl hover:text-[#6E07F3]">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="mb-8 mt-4 md:mt-auto md:mb-auto"> ©  2025 deantosh daiddoh . All rights reserved</p>
         </footer>
 
         <!--Chat Widget - TIDIO-->
         <script src="//code.tidio.co/iotolkjfy9kayge8d6znvpctrdamt6ws.js" async></script>
         <script src="./static/js/form.js"></script>
+        <script src="./static/js/menu.js"></script>
     </body>
 </html>
