@@ -29,12 +29,13 @@
                         </button>
                     </div>
                 </div>
+                <!--For small screen devices-->
                 <div id="dropdown-menu" class="w-screen hidden top-16 l-0 bg-white shadow-lg rounded-lg p-4">
                     <ul class="flex flex-col space-y-4">
-                        <li class="pl-3"><a class="block w-full" href="#home"><span class="text-black">1.</span> HOME</a></li>
-                        <li class="border-t border-t-[1px] border-t-[#666666] pt-3 pl-3"><a class="block w-full" href="#about"><span class="text-[#6E07F3]">2.</span> ABOUT</a></li>
-                        <li class="border-t border-t-[1px] border-t-[#666666] pt-3 pl-3"><a class="block w-full" href="#projects"><span class="text-[#6E07F3]">3.</span> PROJECTS</a></li>
-                        <li class="border-t border-t-[1px] border-t-[#666666] pt-3 pl-3"><a class="block w-full" href="#contact"><span class="text-[#6E07F3]">4.</span> CONTACT</a></li>
+                        <li class="pl-3"><a class="menu-link block w-full" href="#home"><span class="text-[#6E07F3]">1.</span> HOME</a></li>
+                        <li class="border-t border-t-[1px] border-t-[#666666] pt-3 pl-3"><a class="menu-link block w-full" href="#about"><span class="text-[#6E07F3]">2.</span> ABOUT</a></li>
+                        <li class="border-t border-t-[1px] border-t-[#666666] pt-3 pl-3"><a class="menu-link block w-full" href="#projects"><span class="text-[#6E07F3]">3.</span> PROJECTS</a></li>
+                        <li class="border-t border-t-[1px] border-t-[#666666] pt-3 pl-3"><a class="menu-link block w-full" href="#contact"><span class="text-[#6E07F3]">4.</span> CONTACT</a></li>
                     </ul>
                 </div>
             </nav>
@@ -227,7 +228,7 @@
                 <div class="lg:w-4/5 md:p-8 lg:p-20">
                     <!--Success and Error message-->
                     <div id="form-messages" class="mb-4 hidden">
-                        <p id="success-message" class="text-green-600 text-center hidden">Thank you! Your message has been sent.</p>
+                        <p id="success-message" class="text-green-600 text-[15px] md:text-[20px] text-center hidden">Thank you! Your message has been sent.</p>
                         <p id="error-message" class="text-red-600 text-center hidden">There was a problem submitting your form. Please try again.</p>
                     </div>
                     <form class="flex flex-col md:p-8" name="contact" method="POST" netlify>
