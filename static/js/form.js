@@ -20,6 +20,7 @@ document.querySelector('form[name="contact"]').addEventListener('submit', functi
     })
     .then(response => {
         if (response.ok) {
+            formMessages.classList.remove('hidden');
             successMessage.classList.remove("hidden");
             form.reset(); // Reset the form
         } else {
@@ -27,6 +28,7 @@ document.querySelector('form[name="contact"]').addEventListener('submit', functi
         }
     })
     .catch(() => {
+        formMessages.classList.remove('hodden');
         errorMessage.classList.remove("hidden");
     });
 });
