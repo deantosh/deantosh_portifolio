@@ -1,4 +1,4 @@
-# 💼 My Developer Portfolio
+# 💼 Deantosh Portfolio
 
 Welcome to my personal project portfolio! I'm a software developer passionate about building impactful and scalable applications. This repository showcases the projects I've worked on across various technologies including C, Python, JavaScript, Go, and more.
 
