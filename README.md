@@ -35,7 +35,7 @@ A real-time chat application using Node.js, MongoDB, and Socket.IO. It supports 
 
 ---
 
-### 🔹 2. **SavePals App (JS)**
+### 🔹 2. **SavePals App (Python)**
 
 SavePals is a collaborative financial application designed to help friends save money together toward shared goals — offering an alternative to traditional loans.
 
